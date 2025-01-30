@@ -19,14 +19,14 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Compilar código Java
-        run: |
-          mkdir -p out
-          find src -name "*.java" > sources.txt
-          javac -d out @sources.txt
+      - name: Instalar Maven
+        run: sudo apt-get install maven
+
+      - name: Construir projeto com Maven
+        run: mvn clean install -DskipTests
 
       - name: Rodar aplicação
-        run: java -cp out br.com.louly.ProjetoInicialApplication
+        run: mvn spring-boot:run
 
       - name: Instalar GitHub CLI
         run: sudo apt-get install gh
