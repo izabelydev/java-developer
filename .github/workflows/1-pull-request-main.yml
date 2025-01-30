@@ -25,9 +25,6 @@ jobs:
       - name: Construir projeto com Maven
         run: mvn clean install -DskipTests
 
-      - name: Rodar aplicação
-        run: mvn spring-boot:run
-
       - name: Instalar GitHub CLI
         run: sudo apt-get install gh
 
