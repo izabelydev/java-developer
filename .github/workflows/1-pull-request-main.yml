@@ -16,7 +16,7 @@ jobs:
       - name: Configurar Java
         uses: actions/setup-java@v3
         with:
-          java-version: '23'
+          java-version: '17'
           distribution: 'temurin'
 
       - name: Compilar código Java
@@ -26,7 +26,7 @@ jobs:
           javac -d out @sources.txt
 
       - name: Rodar aplicação
-        run: java -cp out br.com.ivblour.Main
+        run: java -cp out br.com.louly.ProjetoInicialApplication
 
       - name: Instalar GitHub CLI
         run: sudo apt-get install gh
