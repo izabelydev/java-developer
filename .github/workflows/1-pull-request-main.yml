@@ -22,7 +22,7 @@ jobs:
       - name: Compilar código Java
         run: |
           mkdir -p out
-          find app/src -name "*.java" > sources.txt
+          find src -name "*.java" > sources.txt
           javac -d out @sources.txt
 
       - name: Rodar aplicação
