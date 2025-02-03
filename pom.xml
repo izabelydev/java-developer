@@ -5,16 +5,16 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.2</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>2.5.4</version>
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.louly</groupId>
-	<artifactId>projeto-inicial</artifactId>
+	<artifactId>projeto_inicial</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>projeto-inicial</name>
-	<description>Projeto inicial usando Spring Boot</description>
+	<name>projeto_inicial</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -27,11 +27,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
 	</dependencies>
 
 	<build>
@@ -42,4 +37,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
