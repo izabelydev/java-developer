@@ -1,8 +1,8 @@
 # BootCamp Dio.Me Java Developer
  
-- Maven 3.9.9
-- Java 17
-- SpringBoot 3.4.2
+- Maven 4.0.0
+- Java 11
+- SpringBoot 2.5.4
 
 ## Maven Wrapper
 O Maven Wrapper permite que o projeto tenha uma versão específica do Maven embutida, sem que os desenvolvedores precisem instalá-la manualmente. Isso facilita a padronização do ambiente de desenvolvimento.
